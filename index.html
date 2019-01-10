@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head><style>
+
+.left{
+text-align: right;
+color: red;
+}input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} 
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=reset] {
+    width: 100%;
+    background-color: #020238;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]{
+    width: 100%;
+    background-color: #020238;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=reset]:hover{
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<script language ="javascript">
+function f1()
+{
+if(document.f.username.value=="")
+	{
+	alert("Plz enter your id")
+	}
+	else if(document.f.p1.value=="")
+	{
+	alert("Plz enter your password")
+	}
+	else
+	{
+	document.f.submit()
+	}
+	}</script>
+<body>
+
+    <img src="http://kisanmart.com/Images/feedback_banner.png">
+    <h1>DIT FEEDBACK FORM</h1>
+    <h2> welcome!</h2>
+
+<div>
+    <form name="f" method="post" action="newjsp.jsp">
+    <label for="fname">USERNAME:</label>
+    <input type="text" id="username" name="username" placeholder="enter your username">
+
+    <label for="lname">PASSWORD:</label>
+    <input type="password" id="password" name="password" placeholder="enter your password">
+    
+
+    
+  
+  <input type="submit" value="Submit" onclick="f1()">
+  <input type="reset" value="Reset">
+   <a href="Adminlogin.html"><font face="comic sans ms" color="red">Admin? CLICK HERE</a>      
+  
+</div>
+        
+
+</form>
+	
+	</body>
+	</html>
+  

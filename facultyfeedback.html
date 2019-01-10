@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+.background{
+
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2e/DIT_University_Dehradun_Logo.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px;
+}
+
+
+</style>
+</head>
+<body>
+    
+
+<div class="navbar">
+    
+    
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">SELECT
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="faculty1.html">FEEDBACK FORM</a>
+      <a href="index.html">LOGOUT</a>
+      
+    </div>
+  </div></div>
+   <div class="background">
+    
+    
+
+    <h3> Dear student please select a faculty from the dropdown menu </h3>
+    <h1>FEEDBACK COLLECTION SYSTEM</h1>
+    <h2> Your feedback is valuable to us ! </h2>
+    <p> DIT University<p>
+        <p>By this process student can give feedback in onlinesystem w/o 
+    wasting his time </p><p>in writing. </p>
+        
+        <h1> JAVA MAIN PROJECT </h1>
+    <h3>CREATED BY:</h3>
+        <h4>Aayush Rawat </h4>
+    <h4> Ayushi Sharma</h4>
+        <h4>Lokesh Bisht </h4>
+    <h4>Paridhi Mittal</h4><h4>Varish </h4>
+    <h3> Submitted to:</h3><h4>Saai Sanjeev Acharaya</h4>
+    
+     
+   </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</body>
+</html>

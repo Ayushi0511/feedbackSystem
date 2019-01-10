@@ -1,0 +1,163 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+.btn-group{
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+</style>
+</head>
+<body>
+    
+    
+
+<div class="navbar">
+    
+    
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+     
+      <a href="facultyfeedback.html">home</a>
+            <a href="index.html">logout</a>
+
+      
+      
+    </div>
+  </div> 
+    
+</div><form action="faculty.jsp" method="post" >
+    <br>
+     
+    <p> SELECT FACULTY </P>
+    <select name="faculty">
+        <option value="faculty1">FACULTY1</option>
+                <option value="faculty2">FACULTY2</option>
+                <option value="faculty3">FACULTY3</option></select>
+                        
+        
+
+
+
+        
+    
+
+    <P> 1. Overall rating of this instructor</p>
+   
+  <input type="radio" name="overall rating" value="excellent"> excellent<br>
+  <input type="radio" name="overall rating" value="good"> good<br>
+  <input type="radio" name="overall rating" value="poor"> poor<br>
+  
+  <p> 2. Way of explaining course objective and subject matter</p>
+  
+   <input type="radio" name="explaining rating" value="excellent"> excellent<br>
+  <input type="radio" name="explaining rating" value="good"> good<br>
+  <input type="radio" name="explaining rating" value="poor"> poor<br>
+  
+  <p> 3. Availablity to assist student in and out of the class</p>
+  
+   <input type="radio" name="p rating" value="excellent"> excellent<br>
+  <input type="radio" name="p rating" value="good"> good<br>
+  <input type="radio" name="p rating" value="poor"> poor<br>
+  
+  <p> 4. Respect and concern for students </p>
+  
+   <input type="radio" name="conducting rating" value="excellent"> excellent<br>
+  <input type="radio" name="conducting rating" value="good"> good<br>
+  <input type="radio" name="conducting rating" value="poor"> poor<br>
+  
+  <p> 5. Any suggestions? </p>
+   
+  <textarea  name="ta1" rows="4" cols="50"> </textarea>
+  
+  <br>
+  <input type="submit" value="SUBMIT"> 
+</form>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+   
+</body>
+</html>
